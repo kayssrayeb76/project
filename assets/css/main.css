@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 88%;
+}
+
+header {
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+}
+
+nav .logo img {
+	width: 250px;
+}
+
+nav #links {
+	display: flex;
+}
+
+nav #links li {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+nav #links li a {
+	color: #4b91f1;
+	font-size: 18px;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+nav #links li a::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: #4b91f1;
+	border-radius: 8px;
+	left: 0;
+	bottom: -5px;
+	transition: width .2s;
+}
+
+nav #links li a:hover::before {
+	width: 50%;
+}
+
+nav #links li a.active::before {
+	width: 100%;
+}
+
+section#description {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 20px;
+}
+
+section#description .left-content-description {
+	display: flex;
+	flex-direction: column;
+}
+
+section#description .left-content-description h1 {
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+
+section#description .left-content-description h1 span:first-child {
+	border: 2px solid #4b91f1;
+	padding: 5px 10px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+section#description .left-content-description h1 span:last-child {
+	color: #4b91f1;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+section#description .left-content-description p {
+	color: rgba(0, 0, 0, .5);
+	line-height: 2;
+	font-weight: 300;
+	font-size: 14px;
+	margin-bottom: 50px;
+}
+
+section#description .left-content-description a {
+	color: #fff;
+	letter-spacing: 1px;
+	border: 1px solid #4b91f1;
+	background-color: #4b91f1;
+	width: 150px;
+	text-align: center;
+	padding: 15px 20px;
+	border-radius: 1px;
+	transition: background .2s, color .2s;
+}
+
+section#description .left-content-description a:hover {
+	background-color: transparent;
+	color: #4b91f1;
+}
+
+section#description .right-content-description {
+	padding: 0 20px 20px;
+}
+
+section#description .right-content-description img {
+	width: 100%;
+}
